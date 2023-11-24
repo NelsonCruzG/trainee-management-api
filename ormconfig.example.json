@@ -1,0 +1,17 @@
+{
+  "type": "database_type",
+  "host": "database_host",
+  "port": 5432,
+  "username": "username",
+  "password": "password",
+  "database": "database_name",
+  "entities": ["./dist/**/**/*.entity.js"],
+  "migrationsTableName": "migration",
+  "migrations": ["./dist/migration/*.js"],
+  "cli": {
+    "migrationsDir": "./src/migration"
+  },
+  "ssl": false,
+  "synchronize": false,
+  "migrationsRun": true
+}
